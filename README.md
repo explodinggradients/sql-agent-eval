@@ -65,6 +65,10 @@ See [notebooks/example.ipynb](notebooks/example.ipynb) for a complete example.
 
 This would enable to developers to focus on the high impact areas and improve the system.
 
+### Submission instructions
+1. Fork the repo  
+2. Push your solution to your fork.
+3. Add a detailed README with your approach, instructions to run the code, and any other details. 
 
 ## Resources
 1. https://github.com/apple/ToolSandbox
