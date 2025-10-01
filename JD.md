@@ -1,3 +1,5 @@
+# Applied Research Scientist
+
 We are seeking an Applied Research Scientist to push the science of evaluating AI agents through simulation. You’ll work on problems at the frontier of agent evaluation, scenario generation, and safety, building environments where agentic workflows can be stress-tested, red-teamed, and improved.
 
 This is a hands-on role: you’ll design evaluation environments, invent new methods for synthetic scenario generation, and contribute directly to the product shaping the future of iterating on agentic systems.
