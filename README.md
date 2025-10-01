@@ -66,3 +66,8 @@ See [notebooks/example.ipynb](notebooks/example.ipynb) for a complete example.
 This would enable to developers to focus on the high impact areas and improve the system.
 
 
+## Resources
+1. https://github.com/apple/ToolSandbox
+2. https://github.com/SalesforceAIResearch/CRMArena
+3. https://github.com/sierra-research/tau2-bench
+
