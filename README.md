@@ -48,11 +48,12 @@ See [notebooks/example.ipynb](notebooks/example.ipynb) for a complete example.
 ## Instructions for candidates
 
 1. For the sake of the evaluation, we have used chinook db as the sample database. You can find the data [here](https://storage.googleapis.com/benchmarks-artifacts/chinook/Chinook.db) - treat this like your production database.
-2. Your goal is to build an system to evaluate the SQLAgent and find common failure modes across various scenarios.
-3. Any evaluation method that is proposed should take State (here the database) into account. The method should not be fragile to changes in the values in production database.
-4. An ideal outcome from the evaluation would look somewhat like this:
+2. Your goal is to build an simulation based evaluation system to evaluate the SQLAgent and find common failure modes across various scenarios.
+3. Any method that is proposed should take state (here the database) into account. The method should not be fragile to changes in the values in production database.
+4. You can modify the SQLAgent code if needed by adding minimal code changes, but the goal is to evaluate the system as is.
+5. An ideal outcome from the evaluation would look somewhat like this:
 
-| Scenarios                      | Invalid SQL | Incorrect Results | Hallucination | Schema Understanding | Security Violations |
+| Scenarios vs Error Types       | Invalid SQL | Incorrect Results | Hallucination | Schema Understanding | Security Violations |
 |-------------------------------|------------|-------------------|--------------|---------------------|-------------------|
 | Basic Information Retrieval    | 0.2%       | 0.5%              | 0.1%         | 0.0%                | 0.0%              |
 | Filtering and Sorting          | 0.8%       | 1.5%              | 0.5%         | 1.2%                | 0.0%              |
