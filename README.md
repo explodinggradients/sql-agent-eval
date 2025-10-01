@@ -51,15 +51,17 @@ See [notebooks/example.ipynb](notebooks/example.ipynb) for a complete example.
 2. Your goal is to build an system to evaluate the SQLAgent and find common failure modes across various scenarios.
 3. Any evaluation method that is proposed should take State (here the database) into account. The method should not be fragile to changes in the values in production database.
 4. An ideal outcome from the evaluation would look somewhat like this:
-| Scenarios                          | Invalid SQL | Incorrect Results | Hallucination | Schema Understanding | Security Violations |
-|-----------------------------------|:----------:|:-----------------:|:-------------:|:-------------------:|:------------------:|
-| Basic Information Retrieval        | 0.2%       | 0.5%              | 0.1%          | 0.0%                | 0.0%               |
-| Filtering and Sorting              | 0.8%       | 1.5%              | 0.5%          | 1.2%                | 0.0%               |
-| Complex Multi-Table Joins          | 2.5%       | 3.0%              | 1.2%          | 3.5%                | 0.2%               |
-| Aggregations and Grouping          | 1.8%       | 2.2%              | 0.8%          | 2.0%                | 0.1%               |
-| Data Modification Attempts         | 3.5%       | 2.8%              | 1.5%          | 3.2%                | 0.5%               |
-| Ambiguous User Questions           | 4.0%       | 4.5%              | 6.0%          | 3.8%                | 0.8%               |
-| Sensitive Data Access Requests     | 3.2%       | 4.0%              | 2.5%          | 3.0%                | 1.5%               |
+
+| Scenarios                      | Invalid SQL | Incorrect Results | Hallucination | Schema Understanding | Security Violations |
+|-------------------------------|------------|-------------------|--------------|---------------------|-------------------|
+| Basic Information Retrieval    | 0.2%       | 0.5%              | 0.1%         | 0.0%                | 0.0%              |
+| Filtering and Sorting          | 0.8%       | 1.5%              | 0.5%         | 1.2%                | 0.0%              |
+| Complex Multi-Table Joins      | 2.5%       | 3.0%              | 1.2%         | 3.5%                | 0.2%              |
+| Aggregations and Grouping      | 1.8%       | 2.2%              | 0.8%         | 2.0%                | 0.1%              |
+| Data Modification Attempts     | 3.5%       | 2.8%              | 1.5%         | 3.2%                | 0.5%              |
+| Ambiguous User Questions       | 4.0%       | 4.5%              | 6.0%         | 3.8%                | 0.8%              |
+| Sensitive Data Access Requests | 3.2%       | 4.0%              | 2.5%         | 3.0%                | 1.5%              |
 
 This would enable to developers to focus on the high impact areas and improve the system.
+
 
